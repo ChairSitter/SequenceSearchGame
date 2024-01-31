@@ -1,5 +1,7 @@
 # Sequence Search Game
 
+https://chairsitter.github.io/SequenceSearchGame/
+
 ![Screenshot of sequence search game](./images/screenshotSequenceGame.jpg)
 
 ## Description
