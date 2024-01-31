@@ -1,6 +1,6 @@
 # Sequence Search Game
 
-
+![Screenshot of sequence search game](./images/screenshotSequenceGame.jpg)
 
 ## Description
 
