@@ -1,22 +1,10 @@
 const numberShadeDivs = () => {
-    let arrayOfArrays = [];
-    for(let i = 0; i < 10; i++){
-        let rowArray = [];
-        for(let j = 0; j < 10; j++){
-            rowArray.push(document.querySelector(`#box-${i+1}-${j+1}`));
-        }
-        arrayOfArrays.push(rowArray);
-    }
-
-    let total = 0;
     for(let i = 0; i < 10; i++){
         for(let j = 0; j < 10; j++){
-            let circle = arrayOfArrays[i][j];
-            let randomNumber = Math.floor(Math.random()*10)
-            total = total + randomNumber;
-            let nineMinus = 9 - randomNumber;
+            let circle = document.querySelector(`#box-${i+1}-${j+1}`);
+            let randomNumber = Math.floor(Math.random()*10);
             circle.textContent = randomNumber;
-            circle.style.backgroundColor = `rgb(${nineMinus*28}, ${nineMinus*28}, ${nineMinus*28})`; 
+            circle.style.backgroundColor = `rgb(${(9 - randomNumber)*28}, ${(9 - randomNumber)*28}, ${(9 - randomNumber)*28})`; 
             circle.style.fontSize = `${1+(randomNumber * .25)}rem`;
             circle.style.color = "black";
             circle.style.border = "5px solid black";
