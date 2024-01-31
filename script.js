@@ -25,8 +25,8 @@ const numberShadeDivs = () => {
             } 
             circle.addEventListener("click", function(){
                 if(circle.style.border == "5px solid black"){
-                    circle.style.border = "5px solid gold";
-                } else if (circle.style.border == "5px solid gold"){
+                    circle.style.border = "5px solid red";
+                } else if (circle.style.border == "5px solid red"){
                     circle.style.border = "5px solid black";
                 }
             })
