@@ -1,3 +1,4 @@
+let initial = true;
 const numberShadeDivs = () => {
     for(let i = 0; i < 10; i++){
         for(let j = 0; j < 10; j++){
@@ -10,14 +11,18 @@ const numberShadeDivs = () => {
             circle.style.border = "5px solid black";
             if(randomNumber > 4){
                 circle.style.color = "white";
-            } 
-            circle.addEventListener("click", function(){
+            }
+            if(initial === true){
+                circle.addEventListener("click", function(){
                 if(circle.style.border == "5px solid black"){
                     circle.style.border = "5px solid red";
                 } else if (circle.style.border == "5px solid red"){
                     circle.style.border = "5px solid black";
                 }
+                initial = false;
             })
+            }
+
         }
     }
 }
