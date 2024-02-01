@@ -3,14 +3,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 h1 {
-    padding: 0;
+    color: white;
+    padding: 0px 10px 0px 10px;
     margin: 0;
     text-transform: uppercase;
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
+    text-align: center;
 }
 
 .box-section {
@@ -46,12 +49,24 @@ div:hover {
     justify-content: center;
 }
 
+#rules {
+    color: white;
+}
+
 button {
     margin-left: 5px;
 }
 
-
+@media only screen and (max-width: 900px){
+    div {
+        height: 45px;
+        width: 45px;
+    }
+}
 @media only screen and (max-width: 600px){
+    h1 {
+        font-size: 2.5rem;
+    }
     div {
         height: 40px;
         width: 40px;

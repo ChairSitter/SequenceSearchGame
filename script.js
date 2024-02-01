@@ -1,3 +1,7 @@
+const body = document.body;
+const headline = document.querySelector('h1');
+const rules = document.querySelector("#rules");
+
 const numberShadeDivs = () => {
     console.log("ran")
     for(let i = 0; i < 10; i++){
@@ -25,9 +29,27 @@ const numberShadeDivs = () => {
         }
     }
 }
+let isLight = false;
+const lightMode = () => {
+    if(isLight === false){
+        body.style.backgroundColor = "white";
+        headline.style.color = "black";
+        rules.style.color = "black";
+        lightModeButton.innerHTML = "DARK<br/>MODE";
+    } else {
+        body.style.backgroundColor = "black";
+        headline.style.color = "white";
+        rules.style.color = "white";
+        lightModeButton.innerHTML = "LIGHT<br/>MODE";
+    }
+    isLight = !isLight;
+}
 
 const playButton = document.querySelector("#play");
 playButton.addEventListener("click", numberShadeDivs);
+
+const lightModeButton = document.querySelector("#light-mode");
+lightModeButton.addEventListener("click", lightMode);
 
 
 
