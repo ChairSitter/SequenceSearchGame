@@ -22,7 +22,6 @@ const numberShadeDivs = () => {
                 initial = false;
             })
             }
-
         }
     }
 }
