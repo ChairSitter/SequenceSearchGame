@@ -26,7 +26,8 @@ h1 {
 }
 
 div {
-    border: 5px black solid;
+    border: 5px lightgray solid;
+    background-color: lightgray;
     height: 50px;
     width: 50px;
     border-radius: 50%;
