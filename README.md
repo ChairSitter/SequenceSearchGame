@@ -2,7 +2,7 @@
 
 https://chairsitter.github.io/SequenceSearchGame/
 
-![Screenshot of sequence search game](./images/screenshotSequenceGame.jpg)
+![Screenshot of sequence search game](./images/darkModeScreenshot.jpg)
 
 ## Description
 
